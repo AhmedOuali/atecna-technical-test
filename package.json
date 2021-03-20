@@ -1,0 +1,14 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "start:front": "lerna run start --scope=@atecna/front",
+    "start:server": "lerna run start --scope=@atecna/server"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "tslint": "^6.1.3",
+    "typescript": "^4.2.3",
+    "@types/jest": "^26.0.15"
+  }
+}
