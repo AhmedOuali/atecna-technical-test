@@ -2,8 +2,9 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "start:front": "lerna run start --scope=@atecna/front",
-    "start:server": "lerna run start --scope=@atecna/server"
+    "start-front": "lerna run start --scope=@atecna/front",
+    "start-server:dev": "lerna run start:dev --scope=@atecna/server",
+    "start-server:prod": "lerna run start:prod --scope=@atecna/server"
   },
   "devDependencies": {
     "lerna": "^4.0.0",
