@@ -1,0 +1,10 @@
+{
+  "ER_0001": "Erreur technique",
+  "ER_0002": "Api introuvable",
+  "ER_0003": "Jeton OAuth non valide",
+  "ER_0004": "L'id du game est obligatoire",
+  "ER_0005": "Game non trouvé",
+  "ER_0006": "Il y a trop de demandes. S'il-vous-plait réessayez plus tard.",
+
+  "OK_0001": "Ok message"
+}

@@ -1,0 +1,10 @@
+{
+  "ER_0001": "Technical Error",
+  "ER_0002": "Api not found",
+  "ER_0003": "Invalid OAuth token",
+  "ER_0004": "Must provide id parameter",
+  "ER_0005": "Game not found",
+  "ER_0006": "Too many requests, please try again later.",
+
+  "OK_0001": "Ok message"
+}
