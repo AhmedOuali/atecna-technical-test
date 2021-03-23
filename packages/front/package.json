@@ -2,6 +2,7 @@
   "name": "@atecna/front",
   "version": "1.0.0",
   "private": true,
+
   "dependencies": {
     "chart.js": "^2.9.4",
     "react": "^17.0.1",
@@ -35,6 +36,9 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "engines": {
+    "node": "8.11.4"
   },
   "browserslist": {
     "production": [
