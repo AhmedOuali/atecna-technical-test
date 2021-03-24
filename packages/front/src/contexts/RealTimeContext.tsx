@@ -1,5 +1,5 @@
 import React, { FunctionComponent, useEffect, useState } from 'react'
-import { IStream } from '../interfaces/IStream'
+import IStream from '../interfaces/IStream'
 import { io } from 'socket.io-client'
 import { LINE_CHART_POINT_DENSITY, WS_URL } from '../constants'
 
@@ -30,7 +30,7 @@ export const RealTimeContextProvider: FunctionComponent = ({ children }) => {
     }
   }, [])
 
-  const indicatorData = realTimeData[realTimeData.length - 1] && realTimeData[realTimeData.length - 1][0] || null
+  const indicatorData = (realTimeData[realTimeData.length - 1] && realTimeData[realTimeData.length - 1][0]) || null
   const lineChartData = realTimeData.map(streams => streams.slice(1, streams.length))
 
   return (

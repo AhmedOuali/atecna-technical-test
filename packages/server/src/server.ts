@@ -12,7 +12,7 @@ import constants from './constants'
 const app = express()
 const http = require('http').createServer(app)
 
-const PORT = process.env['APP_PORT']
+const PORT = process.env['PORT']
 
 app.use(i18n.init)
 app.set('trust proxy', 1)
@@ -25,7 +25,7 @@ setInterval( () => {
   fetchFromTwitch()
     .then()
     .catch()
-}, 60000 / (Math.trunc(parseInt(process.env["TWITCH_THROTTLING_LIMIT"]) /constants.source_games.length)))
+}, 60000 / (Math.trunc(parseInt(process.env["TWITCH_THROTTLING_LIMIT"]) /constants.SOURCE_GAMES.length)))
 
 
 app.use(errorHandler)

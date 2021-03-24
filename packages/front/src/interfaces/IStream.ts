@@ -1,4 +1,4 @@
-export interface IStream {
+export default interface IStream {
   id: string,
   "user_id": string,
   "user_login": string,

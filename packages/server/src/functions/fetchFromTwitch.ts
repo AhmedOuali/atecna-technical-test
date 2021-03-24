@@ -13,7 +13,7 @@ const reduceStreamersData = (streamers: IStreamer[]) => {
 
 const fetchFromTwitch = async () => {
   try {
-    const allGamesData = await Promise.all(constants.source_games.map(gameId => (getStreamsByGameId(gameId))))
+    const allGamesData = await Promise.all(constants.SOURCE_GAMES.map(gameId => (getStreamsByGameId(gameId))))
     const payload = Array.isArray(allGamesData) && allGamesData.map(streamResp => (reduceStreamersData(streamResp)))
     Sockets.io.emit(eventTypes.CHANNELS_VIEWERS_COUNT,  payload )
   } catch (e) {
