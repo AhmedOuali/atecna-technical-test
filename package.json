@@ -3,8 +3,7 @@
   "private": true,
   "scripts": {
     "start-front": "lerna run start --scope=@atecna/front",
-    "start-server:dev": "lerna run start:dev --scope=@atecna/server",
-    "start-server:prod": "lerna run start:prod --scope=@atecna/server"
+    "start-server": "lerna run start:dev --scope=@atecna/server"
   },
   "devDependencies": {
     "lerna": "^4.0.0"
