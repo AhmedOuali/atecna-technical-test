@@ -7,9 +7,6 @@
     "start-server:prod": "lerna run start:prod --scope=@atecna/server"
   },
   "devDependencies": {
-    "lerna": "^4.0.0",
-    "tslint": "^6.1.3",
-    "typescript": "^4.2.3",
-    "@types/jest": "^26.0.15"
+    "lerna": "^4.0.0"
   }
 }
