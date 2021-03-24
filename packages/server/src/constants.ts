@@ -1,5 +1,5 @@
 export default {
-  source_games: [
+  SOURCE_GAMES: [
     743, // /directory/game/Chess
     138585, // /directory/game/Hearthstone
     30921, // /directory/game/Rocket%20League

@@ -25,7 +25,7 @@ setInterval( () => {
   fetchFromTwitch()
     .then()
     .catch()
-}, 60000 / (Math.trunc(parseInt(process.env["TWITCH_THROTTLING_LIMIT"]) /constants.source_games.length)))
+}, 60000 / (Math.trunc(parseInt(process.env["TWITCH_THROTTLING_LIMIT"]) /constants.SOURCE_GAMES.length)))
 
 
 app.use(errorHandler)
