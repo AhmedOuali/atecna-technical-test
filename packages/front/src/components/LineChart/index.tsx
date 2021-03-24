@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react'
 import { Line } from 'react-chartjs-2'
 import { LINE_CHART_POINT_DENSITY } from '../../constants'
-import { IStream } from '../../interfaces/IStream'
+import IStream from '../../interfaces/IStream'
 import './lineChart.css'
 
 const options = {
@@ -47,7 +47,7 @@ const LineChart: FunctionComponent<LineChartProps> = (props) => {
     datasets: [
       {
         label: '# Hearthstone',
-        data: [...Array.from({ length: LINE_CHART_POINT_DENSITY - (data || []).length }, (_, i) => 0), ...(data || []).map(streams => streams[0]['viewer_count'])],
+        data: [...Array.from({ length: LINE_CHART_POINT_DENSITY - (data || []).length }, (_, i) => null), ...(data || []).map(streams => streams[0]['viewer_count'])],
         fill: false,
         backgroundColor: 'rgb(29,86,196)',
         borderColor: 'rgb(99,169,255)',
@@ -57,7 +57,7 @@ const LineChart: FunctionComponent<LineChartProps> = (props) => {
       },
       {
         label: '# Rocket League',
-        data: [...Array.from({ length: LINE_CHART_POINT_DENSITY - (data || []).length }, (_, i) => 0), ...(data || []).map(streams => streams[1]['viewer_count'])],
+        data: [...Array.from({ length: LINE_CHART_POINT_DENSITY - (data || []).length }, (_, i) => null), ...(data || []).map(streams => streams[1]['viewer_count'])],
         fill: false,
         backgroundColor: 'rgb(63,255,10)',
         borderColor: 'rgb(103,214,83)',
@@ -67,7 +67,7 @@ const LineChart: FunctionComponent<LineChartProps> = (props) => {
       },
       {
         label: '# Dota 2',
-        data: [...Array.from({ length: LINE_CHART_POINT_DENSITY - (data || []).length }, (_, i) => 0), ...(data || []).map(streams => streams[2]['viewer_count'])],
+        data: [...Array.from({ length: LINE_CHART_POINT_DENSITY - (data || []).length }, (_, i) => null), ...(data || []).map(streams => streams[2]['viewer_count'])],
         fill: false,
         backgroundColor: 'rgb(255, 56, 10)',
         borderColor: 'rgba(255, 99, 11, 0.8)',
