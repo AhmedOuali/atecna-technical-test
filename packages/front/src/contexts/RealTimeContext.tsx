@@ -30,7 +30,7 @@ export const RealTimeContextProvider: FunctionComponent = ({ children }) => {
     }
   }, [])
 
-  const indicatorData = realTimeData[realTimeData.length - 1] && realTimeData[realTimeData.length - 1][0] || null
+  const indicatorData = (realTimeData[realTimeData.length - 1] && realTimeData[realTimeData.length - 1][0]) || null
   const lineChartData = realTimeData.map(streams => streams.slice(1, streams.length))
 
   return (
