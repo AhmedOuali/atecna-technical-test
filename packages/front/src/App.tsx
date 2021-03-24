@@ -21,7 +21,7 @@ function App () {
   return (
     <AppLayout>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-        {games.map(game => <div className="md:p-4"><GameCard data={game}/></div>)}
+        {games.map((game, index) => <div className="md:p-4" key={`game_${index}`}><GameCard data={game}/></div>)}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="md:p-4">
