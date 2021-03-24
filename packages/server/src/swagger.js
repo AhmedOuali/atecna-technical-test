@@ -37,7 +37,7 @@ module.exports = {
         },
       ],
       'get': {
-        'summary': 'Delete user with given ID',
+        'summary': 'Get game with given id',
         'tags': [
           'Games',
         ],
