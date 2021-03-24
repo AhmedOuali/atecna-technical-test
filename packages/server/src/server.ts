@@ -12,7 +12,7 @@ import constants from './constants'
 const app = express()
 const http = require('http').createServer(app)
 
-const PORT = process.env['APP_PORT']
+const PORT = process.env['PORT']
 
 app.use(i18n.init)
 app.set('trust proxy', 1)
